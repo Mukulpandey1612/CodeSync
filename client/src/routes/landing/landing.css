@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --background-color: #0a0a0a;
+  --text-primary: #f0f2f5;
+  --text-secondary: #a1a1aa;
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('C:\Users\Mukul Pandey\Downloads\Collab-code-editor-main\Collab-code-editor\client\public\image\safar-safarov-LKsHwgzyk7c-unsplash.jpg') center center / cover no-repeat;
+  font-family: 'Inter', sans-serif;
+}
+
+.landing-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+  pointer-events: none; /* ✅ let cursor reach the button */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ========= ANIMATIONS ========= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ new: opacity-only animation so hover transform isn't overridden */
+@keyframes fadeInOpacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.landing-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.landing-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  animation: float 4s ease-in-out infinite, fadeInUp 1s ease-out forwards;
+}
+
+.main-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+  opacity: 0; /* Initial state for animation */
+  animation-fill-mode: forwards; /* Keeps the element visible after animation */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(150, 148, 148);
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 3rem auto; /* Centers the text horizontally and adds bottom margin */
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+  opacity: 0; /* Initial state for animation */
+  animation-fill-mode: forwards; /* Keeps the element visible after animation */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-logo span {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.landing-cta-button {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+
+  /* ✅ use opacity-only animation instead of transform */
+  animation: fadeInOpacity 1s ease-out forwards;
+  animation-delay: 0.4s;
+
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+
+  position: relative; /* keep above overlay */
+  z-index: 2;
+}
+
+.landing-cta-button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.features {
+  margin-top: 3rem;
+  text-align: center;
+  color: #fff;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.features-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.footer .footer-link{
+  color : var(--accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-links a {
+  color: var(--text-primary); 
+  text-decoration: none;      
+  font-weight: 500;          
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-primary); 
+}
