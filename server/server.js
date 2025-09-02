@@ -11,7 +11,12 @@ require('dotenv').config();
 
 
 // --- Middleware Setup ---
-app.use(cors());
+// Replaced the generic cors() with a specific configuration for your frontend
+const corsOptions = {
+  origin: 'https://code-sync-gold.vercel.app', // Your Vercel frontend URL
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 // app.use(express.static(path.join(__dirname, '../client/build')));
 
@@ -99,7 +104,7 @@ app.post('/execute', async (req, res) => {
 
   const options = {
     method: 'POST',
-    url: 'https://judge0-ce.p.rapidapi.com/submissions',
+    url: 'https://judge0-ce.p.radpidapi.com/submissions',
     params: { base64_encoded: 'false', fields: '*' },
     headers: {
       'content-type': 'application/json',
