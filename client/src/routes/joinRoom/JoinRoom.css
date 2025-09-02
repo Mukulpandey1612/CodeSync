@@ -45,7 +45,7 @@
   font-family: 'Inter', sans-serif;
   padding: 2rem;
   overflow: hidden;
-  background: url('C:\Users\Mukul Pandey\Downloads\Collab-code-editor-main\Collab-code-editor\client\public\image\safar-safarov-LKsHwgzyk7c-unsplash.jpg') center center / cover no-repeat;
+  background: url('/image/safar-safarov-LKsHwgzyk7c-unsplash.jpg') center center / cover no-repeat;
   color: var(--text-primary); 
 }
 
