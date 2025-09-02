@@ -1,4 +1,4 @@
-CodeSync - Real-Time Collaborative Code Editor
+## CodeSync - Real-Time Collaborative Code Editor
 CodeSync is a web-based collaborative code editor that allows multiple users to write, edit, and execute code together in real-time. It's designed for pair programming, technical interviews, and remote learning, featuring live code synchronization, multi-language code execution, and an integrated AI assistant powered by the Google Gemini API.
 
 ✨ Key Features
