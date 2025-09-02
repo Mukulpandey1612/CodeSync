@@ -45,7 +45,7 @@
   font-family: 'Inter', sans-serif;
   padding: 2rem;
   overflow: hidden;
-  background-image: url(../../assets/safar-safarov-LKsHwgzyk7c-unsplash.jpg) center / cover no-repeat;
+  background: url(../../assets/safar-safarov-LKsHwgzyk7c-unsplash.jpg) center / cover no-repeat;
   color: var(--text-primary); 
 }
 
