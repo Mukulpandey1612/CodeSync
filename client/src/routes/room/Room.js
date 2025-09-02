@@ -90,6 +90,8 @@ const SimpleDropdown = ({ label, options, value, onChange, id }) => {
                     handleSelect(options[focusedIndex]);
                 }
                 break;
+            default:
+                break;
         }
     };
 

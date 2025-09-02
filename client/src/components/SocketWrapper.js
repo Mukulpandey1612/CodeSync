@@ -73,7 +73,7 @@ export default function SocketWrapper({ children }) {
                 socketRef.current = null;
             }
         };
-    }, []);
+    }, [navigate]);
 
     // Handle room joining logic
     useEffect(() => {
