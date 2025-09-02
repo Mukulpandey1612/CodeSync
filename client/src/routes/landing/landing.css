@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('/image/safar-safarov-LKsHwgzyk7c-unsplash.jpg') center center / cover no-repeat;
+  background-image: url(../../assets/safar-safarov-LKsHwgzyk7c-unsplash.jpg) center center / cover no-repeat;
   font-family: 'Inter', sans-serif;
 }
 
