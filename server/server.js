@@ -104,7 +104,7 @@ app.post('/execute', async (req, res) => {
 
   const options = {
     method: 'POST',
-    url: 'https://judge0-ce.p.radpidapi.com/submissions',
+    url: 'https://judge0-ce.p.rapidapi.com/submissions',
     params: { base64_encoded: 'false', fields: '*' },
     headers: {
       'content-type': 'application/json',
