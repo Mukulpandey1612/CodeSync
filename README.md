@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # CodeSync - Real-Time Collaborative Code Editor
+=======
+# CodeSync - Real-Time Collaborative Coding Platform
+>>>>>>> f0b1ec1b (Added README and project setup)
 
 A web-based collaborative code editor that allows multiple users to write, edit, and execute code together in real-time.  
 Perfect for **pair programming, technical interviews, and remote learning**, featuring live code sync, AI assistance, and multi-language execution.
@@ -46,3 +50,12 @@ cd client
 npm install
 npm start
 ```
+
+### Screenshot
+![App Screenshot](<client/public/image/Screenshot 2025-09-09 093114.png>)
+![App Screenshot](<client/public/image/Screenshot 2025-09-09 093123.png>)
+![App Screenshot](<client/public/image/Screenshot 2025-09-09 093336.png>)
+
+### License
+Open-source and free to use. 
+
