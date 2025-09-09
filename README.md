@@ -46,12 +46,6 @@ cd client
 npm install
 npm start
 ```
-
-### Screenshot
-![App Screenshot](<client/public/image/Screenshot 2025-09-09 093114.png>)
-![App Screenshot](<client/public/image/Screenshot 2025-09-09 093123.png>)
-![App Screenshot](<client/public/image/Screenshot 2025-09-09 093336.png>)
-
 ### License
 Open-source and free to use. 
 
