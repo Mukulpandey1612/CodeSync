@@ -3,7 +3,7 @@
 A web-based collaborative code editor that allows multiple users to write, edit, and execute code together in real-time.  
 Perfect for **pair programming, technical interviews, and remote learning**, featuring live code sync, AI assistance, and multi-language execution.
 
-## ✨ Features
+## Features
 
 * **Real-Time Collaboration** – Code, language selections, and user presence sync instantly with Socket.IO.  
 * **Multi-Language Code Execution** – Run code in JavaScript, Python, C++, Java, and more using Judge0 API.  
@@ -12,7 +12,7 @@ Perfect for **pair programming, technical interviews, and remote learning**, fea
 * **Room-Based Sessions** – Create unique rooms with shareable IDs for private sessions.  
 * **Modern Editor Experience** – Monaco Editor for smooth, responsive coding.  
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend (Client):**  
 * React  
@@ -28,7 +28,7 @@ Perfect for **pair programming, technical interviews, and remote learning**, fea
 * Judge0 RapidAPI  
 * Deployment: Render  
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone Repository
 ```bash
