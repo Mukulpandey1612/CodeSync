@@ -46,6 +46,8 @@ cd client
 npm install
 npm start
 ```
+
 ### License
+
 Open-source and free to use. 
 
