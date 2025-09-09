@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# CodeSync - Real-Time Collaborative Code Editor
-=======
 # CodeSync - Real-Time Collaborative Coding Platform
->>>>>>> f0b1ec1b (Added README and project setup)
 
 A web-based collaborative code editor that allows multiple users to write, edit, and execute code together in real-time.  
 Perfect for **pair programming, technical interviews, and remote learning**, featuring live code sync, AI assistance, and multi-language execution.
